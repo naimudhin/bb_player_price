@@ -3,11 +3,11 @@ import pickle
 import pandas as pd
 import numpy as np
 from PIL import Image
-model = pickle.load(open('C:/Users/naimu/Downloads/bb_price_prediction_model.sav', 'rb'))
+model = pickle.load(open('bb_price_prediction_model.sav', 'rb'))
 
 st.title('Player Salary Prediction')
 st.sidebar.header('Player Data')
-image = Image.open('C:/Users/naimu/Downloads/streamlitprojects/bb_price/basketball.jpg')
+image = Image.open('basketball.jpg')
 st.image(image, '')
 
 # FUNCTION
